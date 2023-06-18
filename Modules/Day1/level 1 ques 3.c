@@ -1,7 +1,4 @@
-Day1
-level 1
-Ques 3
-
+level 1 ques 3
 #include <stdio.h>
 
 int main() {
@@ -10,7 +7,6 @@ int main() {
     float physicsMarks, mathMarks, chemistryMarks;
     float totalMarks, percentage;
 
-    // Read input from user
     printf("Enter Roll No: ");
     scanf("%d", &rollNo);
 
@@ -26,12 +22,11 @@ int main() {
     printf("Enter Marks of Chemistry: ");
     scanf("%f", &chemistryMarks);
 
-    // Calculate total and percentage
     totalMarks = physicsMarks + mathMarks + chemistryMarks;
     percentage = (totalMarks / 300) * 100;
 
-    // Print the summary
-    printf("\n--- Student Summary ---\n");
+    printf("\n");
+    printf("--------- Student Summary ---------\n");
     printf("Roll No: %d\n", rollNo);
     printf("Name: %s\n", name);
     printf("Physics Marks: %.2f\n", physicsMarks);
@@ -39,6 +34,7 @@ int main() {
     printf("Chemistry Marks: %.2f\n", chemistryMarks);
     printf("Total Marks: %.2f\n", totalMarks);
     printf("Percentage: %.2f%%\n", percentage);
+    printf("-----------------------------------\n");
 
     return 0;
 }
